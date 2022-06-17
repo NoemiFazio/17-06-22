@@ -25,7 +25,7 @@ console.log(descriptor.configurable);
 console.log(descriptor.value); 
 
 */
-const list = [
+const shoppingBag = [
   {
     id: 1,
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -160,31 +160,31 @@ const list = [
   },
 ];
 
-function product(list) {
-  /*  for (i in list) {
-        console.log(list[i]["title"]);
-    }
-   for (i in list) {
-        console.log(list[i]["price"]);
-    }
-    for (i in list) {
-        console.log(list[i]["rating"]["count"]);
-    }
-} */
+function product(shoppingBag) {
+  /*  for (i in shoppingBag) {
+          console.log(shoppingBag[i]["title"]);
+      }
+     for (i in shoppingBag) {
+          console.log(shoppingBag[i]["price"]);
+      }
+      for (i in shoppingBag) {
+          console.log(shoppingBag[i]["rating"]["count"]);
+      }
+  } */
 
   const array =
     []; /* Si specifica con le parentesi vuote che è un array vuoto*/
 
-  const object =
+  const vestiario =
     {}; /* Si specifica con le parentesi vuote che è un oggetto vuoto*/
-  for (let index = 0; index < list.length; index++) {
-    const object = {};
-    object.title = list[index]["title"];
-    object.price = list[index]["price"];
-    object.count = list[index]["rating"]["count"];
+  for (let index = 0; index < shoppingBag.length; index++) {
+    const vestiario = {};
+    vestiario.title = shoppingBag[index]["title"];
+    vestiario.price = shoppingBag[index]["price"];
+    vestiario.count = shoppingBag[index]["rating"]["count"];
 
-    array.push(object);
+    array.push(vestiario);
   }
   return array;
 }
-console.log(product(list));
+console.log(product(shoppingBag));
